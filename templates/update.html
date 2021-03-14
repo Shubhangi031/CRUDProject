@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block block_body %}
+   <div class="Container" align="center">
+   <div class="jumbotron">
+    <form action="" method="POST">
+        {%csrf_token%}
+        <h1>Update Student Details</h1>
+        <p>Name <input type="text" name="name" value="{{student.name}}"><br></p>
+        <p>City <input type="text" name="city" value="{{student.city}}"><br></p>
+        <p>Book <input type="text" name="book" value="{{student.book}}"><br></p>
+        <p>Issue date <input type="text" name="date_of_issue" value="{{student.date_of_issue}}"><br></p>
+        <p>Return date <input type="text" name="return_date" value="{{student.return_date}}"><br></p>
+        <p><input type="submit" name="" value="Update" class="btn btn-primary"></p>
+    </form>
+   </div>
+   </div>
+{% endblock %}

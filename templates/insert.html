@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block block_body %}
+    <div class="Container" align="center">
+        <div class="jumbotron">
+            <h1>Insert New Details</h1>
+            <form action="" method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="Submit" name="" value="Insert Data" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+{% endblock %}
